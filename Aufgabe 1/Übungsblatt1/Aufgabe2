@@ -1,6 +1,13 @@
 import math
-n=int(input("Wie groß soll das Haus sein?"))
+n=int(input("Wie groß soll das Haus sein?"))#größe des Hauses
 i=n
+breite=(2**n)
 while i>1:
-    print(" "*(i-1),"/"," "*2*(n-i),"\\")
+    print(" "*(i-1),"/"," "*(2*(n-i)),"\\")
     i=i-1
+print("/", "-"*(breite-2), "\\")
+a=1
+while a<=n-1:
+    print("|"," "*(breite-2),"|")
+    a=a+1
+print("|", "-"*(breite-2), "|")

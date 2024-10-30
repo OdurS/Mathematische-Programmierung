@@ -1,0 +1,6 @@
+import math
+n=int(input("Wie groß soll das Haus sein?"))
+i=n
+while i>1:
+    print(" "*(i-1),"/"," "*2*(n-i),"\\")
+    i=i-1

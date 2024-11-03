@@ -1,0 +1,10 @@
+import random 
+
+eingabe=str(input("gebe Text ein: "))
+print("Aufgabenteil a", eingabe)
+a=eingabe.split()
+b=len(a)
+print(f'a: {a}')
+print("Aufgabeteil b",random.sample(a,b))
+a.sort()
+print("Aufgabenteil c",a)

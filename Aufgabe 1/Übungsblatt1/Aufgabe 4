@@ -1,0 +1,12 @@
+import math
+x=int(input("x="))
+k=int(input("k="))
+sinx=float(x - ((x**3)/(math.factorial(3))) + ((x**5)/(math.factorial(5))))
+print("Aufabenteil a", sinx)
+sinxex=x
+while k > 0 :
+  sinxex=sinxex + (((-1)**k)*((x**((2*k)+1))/(math.factorial((2*k)+1)) ) )
+  k= k - 1 
+print("Aufabenteil b, sin extact", sinxex)
+error=abs(sinxex-sinx)
+print("Fehler:", error)

@@ -5,7 +5,7 @@ breite=size*2
 d=size    
 while i>1:
     #print(" "*(i-1) + "/" + " "*(2*(size-i)) + "\\")
-    s = "/"
+    s = "/"^^
     bs = "\\"
     print(f"{'/':>{i}}{bs:>{(2*(size - i) + 1)}}")
     i=i-1
